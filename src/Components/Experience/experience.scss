@@ -1,0 +1,90 @@
+@import '../../global.scss';
+
+.experience{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .top{
+            display: flex;
+            align-items: center;
+
+            h2{
+                font-size: 40px;
+                font-weight: 500;
+            }
+            margin-bottom: 50px;
+        }
+
+        .bottom{
+            display: flex;
+            align-items: center;
+            width: 70%;
+
+            .left{
+                margin-right: 30px;
+                border: 1px solid black;
+                padding: 50px 50px 0 50px;
+                border-radius: 20px;
+
+                .skill{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    margin-top: 30px;
+
+                    .item{
+                        width: 40%;
+                        display: flex;
+                        margin-bottom: 50px;
+                        
+                        .text{
+                            margin-left: 10px;
+                            font-weight: 300;
+
+                            p{
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+            .right{
+                margin-left: 30px;
+                border: 1px solid black;
+                padding: 50px 50px 0 50px;
+                border-radius: 20px;
+
+                .skill{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    margin-top: 30px;
+
+                    .item{
+                        width: 40%;
+                        display: flex;
+                        margin-bottom: 50px;
+                        
+                        .text{
+                            margin-left: 10px;
+                            font-weight: 300;
+
+                            p{
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

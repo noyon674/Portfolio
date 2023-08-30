@@ -1,0 +1,70 @@
+@import '../../global.scss';
+
+.Hire{
+    background-color: $maincolor;
+    height: 80vh;
+    width: 450px;
+    position: absolute;
+    z-index: 10;
+    top: 90px;
+    left: 450px;
+    border-radius: 20px;
+    transition: 1s;
+    opacity: 1;
+}
+.close{
+    background-color: $maincolor;
+    height: 80vh;
+    width: 450px;
+    position: absolute;
+    z-index: 0;
+    top: 90px;
+    left: 450px;
+    border-radius: 20px;
+    transition: 1s;
+    opacity: 0;
+}
+
+.Close{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    .cross{
+        color: white;
+        cursor: pointer;
+        font-size: 30px;
+    }
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+
+    h2{
+        color: white;
+        padding-bottom: 20px;
+    }
+    input{
+        width: 200px;
+        padding: 5px 20px;
+        margin: 5px 0;
+    }
+    textarea{
+        width: 200px;
+        padding: 10px 20px;
+        height: 100px;
+        resize: none;
+    }
+
+    .hireBtn{
+        border: none;
+        width: 200px;
+        margin-top: 20px;
+        padding: 7px 20px;
+        margin-left: 20px;
+        font-size: 20px;
+    }
+}

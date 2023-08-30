@@ -1,5 +1,5 @@
 import React from 'react';
-import {ArrowDropDown} from '@mui/icons-material';
+import {ArrowDropDown, LinkedIn, GitHub} from '@mui/icons-material';
 import { Typewriter } from 'react-simple-typewriter'
 
 import './intro.scss';
@@ -29,6 +29,8 @@ function Intro() {
           />
           </span>
           </h3>
+          <div className="icon">
+          </div>
         </div>
         <a href="#portfolio"><ArrowDropDown className='arrow'/></a>
       </div>

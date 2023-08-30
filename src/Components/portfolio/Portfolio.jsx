@@ -73,9 +73,10 @@ function Portfolio() {
       <h1>Portfolio</h1>
       <ul>
         {
-          List.map((item) =>(
+          List.map((item, index) =>(
             <PortfolioList 
             title={item.title}
+            key={index}
             active = {selected === item.id}
             setSelected={setSelected}
             id={item.id} />
@@ -83,8 +84,8 @@ function Portfolio() {
         }
       </ul>
       <div className="container">
-        {data.map(item=>(
-          <div className="item">
+        {data.map((item, index)=>(
+          <div className="item" key={index}>
           <img src={item.img} alt="" />
           <h3>{item.title}</h3>
           <Search className='icon'/>

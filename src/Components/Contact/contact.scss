@@ -1,3 +1,90 @@
+@import '../../global.scss';
+
 .contact{
-    background-color: lightblue;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+
+        .top{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            height: 100px;
+            h2{
+                font-size: 40px;
+                color: #222;
+            }
+        }
+        .bottom{
+            display: flex;
+            overflow: hidden;
+            .left{
+                display: flex;
+                flex-direction: column;
+                height: 100vw;
+                margin-top: 50px;
+                width: 50%;
+                padding-left: 100px;
+                h2{
+                    font-size: 30px;
+                    color: $maincolor;
+                }
+                p{
+                    font-size: 15px;
+                    margin: 20px 0;
+                }
+                img{
+                    width: 70%;
+                }
+            }
+            .right{
+                width: 50%;
+                display: flex;
+                margin-top: 70px;
+                form{
+                    width: 100%;
+
+                    input{
+                        margin-bottom: 20px;
+                        height: 30px;
+                        width: 250px;
+                        padding: 0 20px;
+                    };
+                    input::placeholder{
+                        font-size: 15px;
+                    }
+
+                    textarea{
+                        width: 250px;
+                        height:150px ;
+                        padding: 10px 20px;
+                        resize: none;
+                    }
+
+                    button{
+                        margin-top: 20px;
+                        font-size: 20px;
+                        border: none;
+                        background-color: $maincolor;
+                        color: white;
+                        padding: 10px 20px;
+                        cursor: pointer;
+                        border: 1px solid $maincolor;
+                        transition: .5s;
+                        &:hover{
+                            background-color: transparent;
+                            color: $maincolor;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
