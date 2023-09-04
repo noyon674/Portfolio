@@ -4,6 +4,10 @@
     background-color: white;
     display: flex;
 
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+    }
     .left{
         flex: .5;
         overflow: hidden;
@@ -15,8 +19,15 @@
             align-items: end;
             justify-content: center;
 
+            @include mobile{
+                align-items: start;
+            }
             img{
                 height: 90%;
+
+                @include mobile{
+                    height: 50%;
+                }
             }
         }
     }
@@ -35,12 +46,24 @@
             h1{
                 font-size: 60px;
                 margin: 10px 0;
+
+                @include mobile{
+                    font-size: 40px;
+                    margin: 0;
+                }
             }
             h2{
                 font-size: 35px;
+                @include mobile{
+                    font-size: 20px;
+                }
             }
             h3{
                 font-size: 30px;
+
+                @include mobile{
+                    font-size: 20px;
+                }
 
                 span{
                     font-size: inherit;
@@ -53,6 +76,9 @@
             bottom: 50px;
             left: 40%;
 
+            @include mobile{
+                bottom: 20px;
+            }
             .arrow{
                 font-size: 50px;
                 animation: arrowBlink 2s infinite;

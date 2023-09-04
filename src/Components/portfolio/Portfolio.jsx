@@ -32,10 +32,6 @@ function Portfolio() {
     {
       id: 'mern',
       title: 'MERN App'
-    },
-    {
-      id: 'blog',
-      title: 'Blog Post'
     }
 
   ];
@@ -56,10 +52,6 @@ function Portfolio() {
 
       case 'mern':
         setData(mernPortfolio);
-        break;
-
-      case 'blog':
-        setData(contentPorfolio);
         break;
 
       default:
