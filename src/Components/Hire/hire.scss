@@ -77,5 +77,10 @@
         border: none;
         border-radius: 5px;
         font-size: 20px;
+
+        &:hover{
+            background-color: yellow;
+            cursor: pointer;
+        }
     }
 }
