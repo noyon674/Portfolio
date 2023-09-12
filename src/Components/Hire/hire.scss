@@ -43,19 +43,28 @@
     align-items: center;
     padding-top: 50px;
 
+    form{
+        padding: 0 10px;
+    }
+
     h2{
         color: white;
         padding-bottom: 20px;
     }
     input{
-        width: 200px;
-        padding: 5px 20px;
+        width: 230px;
+        padding: 8px 20px;
         margin: 5px 0;
+        border-radius: 5px;
+        border: none;
     }
     textarea{
-        width: 200px;
+        width: 230px;
         padding: 10px 20px;
         height: 100px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 5px;
         resize: none;
     }
 
@@ -64,7 +73,9 @@
         width: 200px;
         margin-top: 20px;
         padding: 7px 20px;
-        margin-left: 20px;
+        margin-left: 40px;
+        border: none;
+        border-radius: 5px;
         font-size: 20px;
     }
 }
